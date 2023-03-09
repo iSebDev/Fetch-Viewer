@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.index.css">
+</head>
+<body>
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><button class="light" id="switcher" style="display: block;"><i class="fa-sun fa-solid fa-1x" id="sun"></i><i class="fa-moon fa-solid fa-1x" id="moon"></i><span id="theme" class="theme" style="font-size: 15px; font-weight: bold;"></span></button></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content" class="fetch-vw content"> 
+        <h1 style="font-weight: bold; margin-top: 5px;">Fetch Viewer</h1>
+        <div style="display: inline;">
+            <span style="font-size: 15px; font-weight: bold;">URL: </span> 
+            <input id="fetch-url" class="url fetch-url" type="url" placeholder="Fetch URL...">
+        </div>
+        <div id="action-panel" style="display: inline-block;">
+            <button id="fetch-btn">Fetch!</button>
+            <button id="paste-btn" style="margin-left: 7.5px;"><i class="fa-paste fa-solid fa-1x"></i></button>
+            <button id="clear-btn" style="margin-left: 7.5px;"><i class="fa-trash fa-solid fa-1x"></i></button>
+        </div>
+    </div>
+    <div id="response">
+        </br>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
